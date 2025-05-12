@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investigación Hidroponía</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+      // JS para resaltar "active" el link de navegación al hacer clic
+      document.addEventListener('DOMContentLoaded', function() {
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+          link.addEventListener('click', function() {
+            navLinks.forEach(l => l.classList.remove('active'));
+            this.classList.add('active');
+          });
+        });
+      });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header-inner investigacion-header">
+            <img src="images/chapingo-logo.png" alt="Logotipo de la Universidad de Chapingo" class="logo logo-left">
+            <h1 class="investigacion-title">Investigación en Hidroponía</h1>
+            <img src="images/otro-logo.png" alt="Otro logotipo" class="logo logo-right">
+        </div>
+        <div class="header-buttons investigacion-buttons">
+            <a href="index.html" class="button">Inicio</a>
+        </div>
+    </header>
+    <main>
+        <div class="investigacion-container">
+            <aside class="sidebar">
+                <h3>Saltos rápidos</h3>
+                <nav class="nav-links">
+                    <a href="#introduccion" class="nav-link active">Introducción</a>
+                    <a href="#objetivos" class="nav-link">Objetivos</a>
+                    <a href="#hipotesis" class="nav-link">Hipótesis</a>
+                    <a href="#materiales-metodos" class="nav-link">Materiales y Métodos</a>
+                    <a href="#referencias" class="nav-link">Referencias</a>
+                </nav>
+            </aside>
+            <div class="investigacion-content">
+                <section id="introduccion">
+                    <div class="section-flex">
+                        <div class="section-image">
+                            <!-- Espacio para imagen de Introducción -->
+                            <img src="images/intro.jpeg" alt="Imagen Introducción" />
+                        </div>
+                        <div class="section-text">
+                            <h2>Introducción</h2>
+                            <p>
+                                El siglo XXI ha traído consigo un fenómeno demográfico sin precedentes: la urbanización acelerada. Se estima que a partir de 2010, el 70% de la población mundial reside en zonas urbanas (Organización para la Cooperación y el Desarrollo Económicos, 2012). Este crecimiento urbano exponencial plantea un desafío crucial en términos de seguridad alimentaria, ya que se prevé un incremento del 50% en la demanda de alimentos (Pinstrup-Andersen, 2018). En el contexto de México, las proyecciones indican que la población podría alcanzar los 150 millones de personas para el año 2050 (de Anda & Shear, 2017), lo que subraya la urgencia de buscar soluciones innovadoras para la producción de alimentos.
+                            </p>
+                            <p>
+                                En este escenario, las granjas verticales de interior emergen como una alternativa prometedora. Estas instalaciones, también conocidas como Fábricas de Plantas con Luz Artificial (Plant Factory with Artificial Light - PFAL), optimizan el uso de recursos mediante el control ambiental y la incorporación de luces artificiales, como los LEDs (Benke & Tomkins, 2017). A diferencia de la agricultura tradicional, las PFAL permiten reducir hasta en un 97% el consumo de agua, disminuyendo significativamente la evapotranspiración (Sills & Serbin, 2018).
+                            </p>
+                            <p>
+                                Una PFAL se define como una estructura tipo almacén, aislada térmicamente y casi hermética, que integra ventiladores para la circulación del aire, sistemas de suministro de CO₂ y nutrientes, y un control ambiental preciso (Kozai, 2013). Si bien las PFAL ofrecen un gran potencial, actualmente enfrentan desafíos relacionados con los costos de producción y la necesidad de mano de obra especializada (Flores et al., 2022).
+                            </p>
+                            <p>
+                                Según Kozai (2016), los biosistemas de cultivo en espacios cerrados se pueden clasificar según el volumen de aire en: micro-PFAL (0.03 m³ a 1 m³), mini-PFAL (&gt;1 m³ a 30 m³) y PFAL (&gt;30 m³). En este sentido, Navas y Peña (2012) proponen la implementación de módulos culinarios y medicinales en espacios como cocinas, azoteas, terrazas, balcones o patios, para el cultivo de especies como tomillo, menta, hierbabuena, perejil, toronjil y romero, fomentando prácticas limpias y el autoconsumo.
+                            </p>
+                            <p>
+                                La optimización de la calidad e intensidad de la luz, la longitud de onda y el fotoperiodo de las luces LED es un factor clave para maximizar el rendimiento de las PFAL con el mínimo consumo de energía (Loconsole et al., 2019). Diversos estudios han explorado las combinaciones de luz más eficientes, como la propuesta de Tang et al. (2009) de una mezcla de 90% de luz roja y 10% de luz azul, o la sugerencia de Nguyen et al. (2021) de añadir luz LED blanca para mejorar el crecimiento y la calidad de la lechuga. De hecho, Lin et al. (2013) encontraron que la biomasa, la textura, el dulzor y la forma de las plantas eran superiores con una combinación de luz roja/azul/blanca en comparación con la luz roja/azul.
+                            </p>
+                            <p>
+                                A pesar del potencial de las PFAL, su desarrollo e implementación en México es aún incipiente. Sin embargo, se reconoce que la investigación, el desarrollo y la transferencia de tecnología en este campo podrían contribuir significativamente a la seguridad alimentaria del país en un futuro próximo (Flores et al., 2022).
+                            </p>
+                            <p>
+                                En el contexto de esta investigación, se define una "Fábrica de Plantas Doméstica con Luz Artificial" (Home Plant Factory with Artificial Light, H-PFAL) como una mini Fábrica de Plantas idealmente ubicada en el hogar u oficina, con varios niveles, diseñada para el desarrollo de agricultura vertical en las condiciones ambientales de confort del hábitat humano. Los cultivos desarrollados en la H-PFAL se centran principalmente en hortalizas o cultivos de bajo porte para el autoconsumo.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section id="objetivos">
+                    <div class="section-flex">
+                        <div class="section-image">
+                            <!-- Espacio para imagen de Objetivos -->
+                            <img src="images/objetivos.jpeg" alt="Imagen Objetivos" />
+                        </div>
+                        <div class="section-text">
+                            <h2>Objetivos</h2>
+                            <ul>
+                                <li>Investigar el estado del arte de las minifábricas de plantas con luz artificial y sus usos en los hogares.</li>
+                                <li>Evaluar el rendimiento y desarrollo de plantas de arúgula (Eruca vesicaria ssp. sativa) y lechuga (Lactuca sativa var. capitata) cultivadas simultáneamente en una fábrica de planta casera con luz artificial (HPAL) bajo dos diferentes intensidades de iluminación artificial y dos diferentes condiciones ambientales.</li>
+                                <li>Elaborar un modelo de crecimiento del cultivo de la arúgula en una Fábrica de Plantas con Luz Artificial.</li>
+                                <li>Elaborar un modelo de las condiciones ambientales y de luminosidad en una HPFAL, utilizando Dinámica de Fluidos Computacional (CFD).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section id="hipotesis">
+                    <div class="section-flex">
+                        <div class="section-image">
+                            <!-- Espacio para imagen de Hipótesis -->
+                            <img src="images/hipotesis.jpeg" alt="Imagen Objetivos" style="width:500px; height:auto;" />
+                        </div>
+                        <div class="section-text">
+                            <h2>Hipótesis</h2>
+                            <ul>
+                                <li>Las condiciones ambientales al interior de un hogar son suficientes para el desarrollo del cultivo de arúgula y lechuga en una mini-fábrica de plantas con luz artificial sin control ambiental (HPFAL).</li>
+                                <li>El rendimiento de los cultivos de arúgula y lechuga no cambia significativamente entre dos tratamientos de luminosidad con una diferencia de intensidad de 100 mMol/m⁻² s⁻¹.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section id="materiales-metodos">
+                    <div class="section-flex">
+                        <div class="section-image">
+                            <!-- Espacio para imagen de Materiales y Métodos -->
+                            <img src="images/materiales-metodos.jpeg" alt="Imagen Materiales y Métodos" />
+                        </div>
+                        <div class="section-text">
+                            <h2>Materiales y Métodos</h2>
+                            <p>
+                                La metodología de la investigación comprendió las siguientes etapas:
+                            </p>
+                            <ul>
+                                <li>Descripción del sitio experimental.</li>
+                                <li>Construcción de dos Fábricas de Plantas Caseras con Luz Artificial (HPFAL).</li>
+                                <li>Diseño experimental.</li>
+                                <li>Implementación de sensores para la medición de variables.</li>
+                                <li>Elaboración de un modelo de cultivo de la arúgula en una HPFAL.</li>
+                                <li>Elaboración de un modelo de las condiciones ambientales de una HPFAL, utilizando Dinámica de Fluidos Computacional (CFD).</li>
+                            </ul>
+                            <p>
+                                El experimento se llevó a cabo en dos ubicaciones:
+                            </p>
+                            <ul>
+                                <li><strong>Oficina/Hogar:</strong> Instalaciones del Colegio de Postgraduados Campus Montecillo, en Texcoco, Estado de México.</li>
+                                <li><strong>Cuarto Obscuro:</strong> Laboratorio de PFAL de la Universidad Autónoma Chapingo.</li>
+                            </ul>
+                            <p>
+                                Se diseñaron y construyeron dos HPFAL, una para cada ubicación experimental.
+                            </p>
+                            <p>
+                                El diseño experimental consistió en un diseño de bloques al azar con dos tratamientos:
+                            </p>
+                            <ul>
+                                <li><strong>T1 - Condiciones Ambientales:</strong> Cuarto Obscuro y Oficina/Hogar. Las variables medidas en este tratamiento fueron temperatura, humedad relativa y concentración de CO₂.</li>
+                                <li><strong>T2 - Intensidad Luminosa (PPFD):</strong> 240 mMol m⁻² s⁻¹ y 180 mMol m⁻² s⁻¹. Las variables medidas en este tratamiento fueron peso fresco y seco, altura de la planta, diámetro de la planta, área foliar, longitud de raíz, volumen de raíz, número de tallos y hojas, días de madurez de cosecha y duración de la etapa vegetativa.</li>
+                            </ul>
+                            <p>
+                                Se implementaron sensores para la medición de las siguientes variables:
+                            </p>
+                            <ul>
+                                <li><strong>Condiciones ambientales:</strong> temperatura y humedad relativa (DHT22), concentración de CO₂ (MH-Z19E, SCD40) y velocidad del viento (CFM Anemómetro HVAC).</li>
+                                <li><strong>Iluminación con lámparas LED:</strong> calidad e intensidad de la luz (Apogee Instrument).</li>
+                                <li><strong>Hidroponia en las PFAL:</strong> nutrición de las plantas (solución nutritiva), pH, conductividad eléctrica (CE) y oxígeno disuelto.</li>
+                            </ul>
+                            <p>
+                                Se implementó el Internet de las Cosas (IoT) para el monitoreo de las variables, utilizando la plataforma ThingSpeak, y se elaboró un programa para la visualización y el respaldo de los datos.
+                            </p>
+                            <p>
+                                Además, se desarrolló un modelo de crecimiento del cultivo de arúgula (siguiendo a Van Henten, 2003) y un modelo de simulación de la energía con Dinámica de Fluidos Computacional (CFD).
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section id="referencias">
+                    <div class="section-flex">
+                        <div class="section-image">
+                            <!-- Espacio para imagen de Referencias -->
+                            <img src="images/referencias.jpeg" alt="Imagen Referencias" />
+                        </div>
+                        <div class="section-text">
+                            <h2>Referencias</h2>
+                            <ul>
+                                <li>Al-Kodmany, 2018. The Vertical Farm: A Review of Developments and Implications for the Vertical City. Buildings 2018, 8, 24; doi:10.3390/buildings8020024.</li>
+                                <li>Benke K. & Tomkins B. (2017). Future food-production systems: vertical farming and controlled-environment agriculture, Sustainability: Science, Practice and Policy, 13(1), 13-26. Doi: https://doi.org/10.1080/15487733.2017.1394054.</li>
+                                <li>Bellezoni, R. A., Meng, F., He, P., & Seto, K. C. (2021). Understanding and conceptualizing how urban green and blue infrastructure affects the food, water, and energy nexus: A synthesis of the literature. https://www.google.com/search?q=https://dx.doi.org/10.1016/j.jclepro.2021.125825.</li>
+                                <li>Y otras referencias relevantes sobre agricultura urbana, PFAL, dinámica de fluidos y modelado de cultivos.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Hidroponía para todos. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
